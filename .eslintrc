@@ -1,0 +1,11 @@
+parserOptions:
+  ecmaVersion: 8
+env:
+  es6: true
+  node: true
+extends:
+  - airbnb-base
+  - plugin:node/recommended
+plugins:
+  - import
+  - node
