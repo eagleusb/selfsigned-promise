@@ -2,7 +2,7 @@
   "name": "selfsigned",
   "version": "1.10.1",
   "description": "Generate self signed certificates private and public keys",
-  "main": "index.js",
+  "main": "./lib/",
   "scripts": {
     "test": "mocha -t 5000"
   },
@@ -41,6 +41,6 @@
     "mocha": "^1.20.1"
   },
   "engines": {
-    "node": ">=7.5.0"
+    "node": ">=8.2.1"
   }
 }
