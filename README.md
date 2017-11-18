@@ -11,9 +11,9 @@ Generate a self signed x509 certificate from node.js.
 ## Usage
 
 ```js
-var selfsigned = require('selfsigned');
-var attrs = [{ name: 'commonName', value: 'contoso.com' }];
-var pems = selfsigned.generate(attrs, { days: 365 });
+const selfsigned = require('selfsigned');
+const certAttributes = [{ name: 'commonName', value: 'helloworld.paris' }];
+const pems = selfsigned.generate(certAttributes, { days: 365 });
 console.log(pems)
 ```
 
