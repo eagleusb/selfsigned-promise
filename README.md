@@ -1,4 +1,5 @@
-Generate a self signed x509 certificate from node.js.
+Generates a self-signed x509 certificate and its RSA keys from NodeJS.
+It is pomises based, see [Usage](#basic-usage)
 
 [![Build Status](https://travis-ci.org/jfromaniello/selfsigned.png)](https://travis-ci.org/jfromaniello/selfsigned)
 
@@ -64,8 +65,8 @@ const certAttributes = [
 ];
 
 const options = {
-  keySize: 2048, // the size for the private key in bits (default: 2048)
-  validForDays: 30, // signed certificate expiration time (default: 365)
+  keySize: 2048,
+  validForDays: 30,
   certExtensions: [
     {
       name: 'basicConstraints',
@@ -76,13 +77,14 @@ const options = {
       altNames: [{
         type: 6,
         value: 'http://example.org/webid#me',
-      }
+      }],
+    }
   ],
-  exportAsPkcs7: true, // include PKCS#7 as part of the output (default: false)
+  exportAsPkcs7: true,
 }
 ```
 
-You can avoid key pair generation specifying your own keys in the options object.
+You can avoid key pair generation specifying your own PEM keys in the options object.
 ```js
 const options = {
   keyPair: {
