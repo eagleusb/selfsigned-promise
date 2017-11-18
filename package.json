@@ -1,6 +1,6 @@
 {
   "name": "selfsigned",
-  "version": "1.11.0",
+  "version": "2.0.0",
   "description": "Generate self signed certificates private and public keys",
   "main": "./lib/",
   "scripts": {
@@ -8,7 +8,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git://github.com/jfromaniello/selfsigned.git"
+    "url": "git://github.com/gooodmorningopenstack/selfsigned.git"
   },
   "keywords": [
     "openssl",
@@ -16,8 +16,13 @@
     "signed",
     "certificates"
   ],
-  "author": "José F. Romaniello <jfromaniello@gmail.com> (http://joseoncode.com)",
+  "author": "Leslie-Alexandre DENIS <leslie@eagleusb.com> (https://github.com/gooodmorningopenstack)",
   "contributors": [
+    {
+      "name": "José F. Romaniello",
+      "email": "jfromaniello@gmail.com",
+      "url": "http://joseoncode.com"
+    },
     {
       "name": "Paolo Fragomeni",
       "email": "paolo@async.ly",
